@@ -8,4 +8,24 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="SRP_OCP_DIP\" />
+    <None Remove="LSP\" />
+    <None Remove="LSP\Compliant_Example\" />
+    <None Remove="ISP\" />
+    <None Remove="ISP\Violated\" />
+    <None Remove="ISP\Compliant\" />
+    <None Remove="ISP\Violated\Database\" />
+    <None Remove="ISP\Compliant\Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SRP_OCP_DIP\" />
+    <Folder Include="LSP\" />
+    <Folder Include="LSP\Compliant_Example\" />
+    <Folder Include="ISP\" />
+    <Folder Include="ISP\Violated\" />
+    <Folder Include="ISP\Compliant\" />
+    <Folder Include="ISP\Violated\Database\" />
+    <Folder Include="ISP\Compliant\Database\" />
+  </ItemGroup>
 </Project>
