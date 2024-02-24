@@ -2,12 +2,16 @@
 {
     public class SRP_OCP_DIP_Compliant
     {
-        public static void Execute()
+        private readonly NotificationClient _emailNotifier;
+        private readonly NotificationClient _smsNotifier;
+        public SRP_OCP_DIP_Compliant() {
+            _emailNotifier = new NotificationClient(new EmailNotifier());
+            _smsNotifier = new NotificationClient(new SMSNotifier());
+        }
+        public void Execute()
         {
-            var emailNotifier = new NotificationClient(new EmailNotifier());
-            var smsNotifier = new NotificationClient(new SMSNotifier());
-            emailNotifier.Notify("This is a sample message");
-            smsNotifier.Notify("This is a sample message");
+            _emailNotifier.Notify("This is a sample message");
+            _smsNotifier.Notify("This is a sample message");
         }
     }
 }

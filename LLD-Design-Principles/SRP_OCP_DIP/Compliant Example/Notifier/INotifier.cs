@@ -1,6 +1,5 @@
 ﻿namespace LLD_Design_Principles.SRP_OCP_DIP.Compliant
 {
-
     /*
      
      Now Low level class like EmailNotifier and SMSNotifier are now dependant on Abstraction
@@ -15,22 +14,6 @@
 
 		void Notify(string message);
 	}
-
-    public class EmailNotifier: INotifier
-	{
-        public void Notify(string message)
-        {
-            Console.WriteLine(string.Concat(message, " sent by Email"));
-        }
-
-	}
-    public class SMSNotifier : INotifier
-    {
-        public void Notify(string message)
-        {
-            Console.WriteLine(string.Concat(message, " sent by SMS"));
-        }
-    }
 
 }
 

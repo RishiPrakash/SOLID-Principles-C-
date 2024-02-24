@@ -17,6 +17,7 @@
     <None Remove="ISP\Compliant\" />
     <None Remove="ISP\Violated\Database\" />
     <None Remove="ISP\Compliant\Database\" />
+    <None Remove="SRP_OCP_DIP\Compliant Example\Notifier\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SRP_OCP_DIP\" />
@@ -27,5 +28,6 @@
     <Folder Include="ISP\Compliant\" />
     <Folder Include="ISP\Violated\Database\" />
     <Folder Include="ISP\Compliant\Database\" />
+    <Folder Include="SRP_OCP_DIP\Compliant Example\Notifier\" />
   </ItemGroup>
 </Project>

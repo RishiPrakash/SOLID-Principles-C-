@@ -9,24 +9,24 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Starting the LLD Design Principles Project");
-        // Demonstrate_SRP_OCP_DIP();
-        // Demonstrate_LSP();
+        Console.WriteLine("Starting the LLD Design SOLID Principles Project");
+        Demonstrate_SRP_OCP_DIP();
+        Demonstrate_LSP();
         Demonstrate_ISP();
-        Console.WriteLine("Ending the LLD Design Principles Project");
+        Console.WriteLine("Ending the LLD Design SOLID Principles Project");
 
     }
 
     public static void Demonstrate_SRP_OCP_DIP() {
 
-        SRP_OCP_DIP_Viloated.Execute();
-        SRP_OCP_DIP_Compliant.Execute();
+        new SRP_OCP_DIP_Viloated().Execute();
+        new SRP_OCP_DIP_Compliant().Execute();
     }
 
     public static void Demonstrate_LSP()
     {
-        LSP_Violate.Execute();
-        LSP_Compliant.Execute();
+        new LSP_Violate().Execute();
+        new LSP_Compliant().Execute();
     }
 
     public static void Demonstrate_ISP() {

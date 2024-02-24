@@ -2,12 +2,14 @@
 {
     public class SRP_OCP_DIP_Viloated
     {
-        public static void Execute()
+        private readonly NotificationClient _notificationClient;
+        public SRP_OCP_DIP_Viloated() {
+            _notificationClient = new NotificationClient();
+        }
+        public void Execute()
         {
-            var notificationClient = new NotificationClient();
-
-            notificationClient.notify("This is a sample message", "Email");
-            notificationClient.notify("This is a sample message", "SMS");
+            _notificationClient.notify("This is a sample message", "Email");
+            _notificationClient.notify("This is a sample message", "SMS");
 
         }
     }

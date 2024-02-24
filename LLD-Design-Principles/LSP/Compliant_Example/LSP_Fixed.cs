@@ -13,7 +13,7 @@ namespace LLD_Design_Principles.LSP.Compliant_Example
         /*
          We are calling the same set of methods to create rectangle and square
          */
-        public static void Execute()
+        public void Execute()
         {
             var rectangle = new Rectangle();
             rectangle.SetHeight(10);

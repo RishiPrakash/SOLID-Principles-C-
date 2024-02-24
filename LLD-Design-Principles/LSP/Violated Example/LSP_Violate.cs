@@ -15,7 +15,7 @@ namespace LLD_Design_Principles.LSP.ViolatedExample
      */
     public class LSP_Violate
     {
-        public static void Execute()
+        public void Execute()
         {
             var rectangle = new Rectangle();
             rectangle.SetHeight(10);
